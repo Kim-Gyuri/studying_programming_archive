@@ -42,21 +42,23 @@
 * Srping Data Jpa
 - 실전 JPA https://github.com/Kim-Gyuri/-Practice-SpringDataJPA
 
-* Spring MVC 
-* MVC 1
-- 기본 기능을 배우기	https://github.com/Kim-Gyuri/MVC1--1
-- 강의노트, 코드 관리	https://github.com/Kim-Gyuri/-MVC-1-
-- 웹 페이지 만들기 프로젝트 - 코드 관리	https://github.com/Kim-Gyuri/spring-MVC1-webpage
 
-* MVC2
-- 스프링 MVC2 (1편에서 만든) 상품 관리 프로젝트를 개선해보자	https://github.com/Kim-Gyuri/spring-MVC2---
-- 스프링 MVC2 업로드 	 https://github.com/Kim-Gyuri/springMVC2-upload
-- 스프링 MVC2 컨버터	 https://github.com/Kim-Gyuri/springMVC2-converter
-- 스프링 MVC2 예외  	https://github.com/Kim-Gyuri/springMvc2-exception
-- 스프링 MVC2 Validation	https://github.com/Kim-Gyuri/spring-MVC2--Validation-
-- 스프링 MVC2 타임리프 기본 기능	https://github.com/Kim-Gyuri/-MVC2--thymeleaf
-- 로그인 처리1 - 쿠키, 세션 강의정리 	https://github.com/Kim-Gyuri/SpringMVC2--cookie-session
+----
+### MVC 1
+- [기본 기능을 배우기](https://github.com/Kim-Gyuri/MVC1--1)
+- [강의노트, 코드 관리](https://github.com/Kim-Gyuri/-MVC-1-)
+- [웹 페이지 만들기 프로젝트 - 코드 관리](https://github.com/Kim-Gyuri/spring-MVC1-webpage)
 
+### MVC2
++ [스프링 MVC2 (1편에서 만든) 상품 관리 프로젝트를 개선해보자](https://github.com/Kim-Gyuri/spring-MVC2---)
++ [스프링 MVC2 업로드](https://github.com/Kim-Gyuri/springMVC2-upload)
++ [스프링 MVC2 컨버터](https://github.com/Kim-Gyuri/springMVC2-converter)
++ [스프링 MVC2 예외](https://github.com/Kim-Gyuri/springMvc2-exception)
++ [스프링 MVC2 Validation](https://github.com/Kim-Gyuri/spring-MVC2--Validation-)
++ [스프링 MVC2 타임리프 기본 기능](https://github.com/Kim-Gyuri/-MVC2--thymeleaf)
++ [로그인 처리1 - 쿠키, 세션 강의정리](https://github.com/Kim-Gyuri/SpringMVC2--cookie-session)
+
+----
 * 자바 ORM 표준
 - 1 ,연관관계매핑 기초 https://github.com/Kim-Gyuri/ORM-JPA--
 - 2, 자바 JPA ORM 고급편 https://github.com/Kim-Gyuri/-Practice-SpringDataJPA
