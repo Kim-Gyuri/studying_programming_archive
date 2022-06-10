@@ -33,5 +33,35 @@ class Solution {
 call 0 : add1 -> tmp(1) <br>
 call 1 : skip1, add2 -> tmp(1,2) <br>
 call 2 : skip1,2, add3 -> tmp(1,2,3) <br>
-call 3 : 
-  
+call 3 : base case, 123 -> ret(1,2,3) <br>
+call 2 : remove 3, return tmp(1,2) <br>
+call 1 : remove 2, add 3, -> return tmp(1,3) <br>
+call 4 : skip 1, add 2, -> tmp(1,3,2) <br>
+call 5 : base case, 132 -> ret(1,3,2) <br>
+call 4 : remove 2, skip 3, return tmp(1,3) <br>
+계속 반복된다.
+
+### 코드
+```java
+ class Solution {
+    public List<List<Integer>> permute(int[] nums) {
+        List<List<Integer>> list = new ArrayList<>();
+        backtrackList(list, new ArrayList<>(), nums);
+        return list;
+    }
+    
+    private void backtrackList(List<List<Integer>> list, List<Integer> tempList, int[] nums) {
+        if (tempList.size() == nums.length) {  //base case, tmp가 가득 찼으면 list.add(tmp)
+            list.add(new ArrayList<>(tempList));
+        } else {
+            for (int i=0; i<nums.length; i++) {  //recursion(재귀함수)
+                if (tempList.contains(nums[i])) continue;
+                tempList.add(nums[i]);
+                backtrackList(list, tempList, nums);
+                tempList.remove(tempList.size()-1);
+            }
+        }
+    }
+}
+```                                               
+                                                
