@@ -10,19 +10,20 @@
 * 
 *
 ## 2. Language
-* JAVA
-- 자바 콘솔 프로젝트 ;https://github.com/Kim-Gyuri/JavaConsoleProject
-- 자바 구구단 만들기 https://github.com/Kim-Gyuri/Getting-Started-Exercises-Gugudan
-- 자바 달력 시스템 만들기 https://github.com/Kim-Gyuri/coding-java-calendar/blob/master/src/Scheduler/Calendar.java
+### JAVA
++ [자바 콘솔 프로젝트](https://github.com/Kim-Gyuri/JavaConsoleProject)
++ [자바 구구단 만들기](https://github.com/Kim-Gyuri/Getting-Started-Exercises-Gugudan)
++ [자바 달력 시스템 만들기](https://github.com/Kim-Gyuri/coding-java-calendar/blob/master/src/Scheduler/Calendar.java)
 
-* SPRING
-- 스프링 jpa 쇼핑몰 만들기 : https://github.com/Kim-Gyuri/spring-jpa-shop-web
-- 스프링부트와 AWS로 혼자 구현하는 웹서비스 책 공부 https://github.com/Kim-Gyuri/webservice
+### SPRING
++ [스프링 jpa 쇼핑몰 만들기](https://github.com/Kim-Gyuri/spring-jpa-shop-web)
++ [스프링부트와 AWS로 혼자 구현하는 웹서비스 책 공부](https://github.com/Kim-Gyuri/webservice)
 
-* 코딩테스트 공부
-- 알고리즘1 https://github.com/Kim-Gyuri/Java_datastructure_algorithm
-- 리트코드 https://github.com/Kim-Gyuri/leetcode
--  알고리즘 2 https://github.com/Kim-Gyuri/Java_datastructure_algorithm2
+
+### 코딩테스트 공부
++ [알고리즘1](https://github.com/Kim-Gyuri/Java_datastructure_algorithm)
++ [알고리즘2](https://github.com/Kim-Gyuri/Java_datastructure_algorithm2)
++ [리트코드](https://github.com/Kim-Gyuri/leetcode)
 
 ## 3. CS
 * 자료구조
@@ -31,17 +32,20 @@
 * 데이터베이스
 * 디자인 패턴
 * 알고리즘 풀이
+
+
 ## 4. Web Programming ,인프런 강의
-* Springboot + JPA
-- 실전1 https://github.com/Kim-Gyuri/Spring-Boot-and-JPA-Utilization1---Lecture-Notes
-- 실전2 https://github.com/Kim-Gyuri/-practice2-springboot-JPA
+### Springboot + JPA
++ [실전1 코드](https://github.com/Kim-Gyuri/Spring-Boot-and-JPA-Utilization1---Lecture-Notes)
++ [실전1 정리노트](https://github.com/Kim-Gyuri/practice1-springboot-JPA)
++ [실전2](https://github.com/Kim-Gyuri/-practice2-springboot-JPA)
 
-* Spring core
-- 스프링 핵심 원리 - 기본편 	https://github.com/Kim-Gyuri/-
 
-* Srping Data Jpa
-- 실전 JPA https://github.com/Kim-Gyuri/-Practice-SpringDataJPA
+### Spring core
++ [스프링 핵심 원리 - 기본편](https://github.com/Kim-Gyuri/-)
 
+### Srping Data Jpa
++ [실전 JPA](https://github.com/Kim-Gyuri/-Practice-SpringDataJPA)
 
 ----
 ### MVC 1
@@ -60,13 +64,16 @@
 
 
 ----
-* 자바 ORM 표준
-- 1 ,연관관계매핑 기초 https://github.com/Kim-Gyuri/ORM-JPA--
-- 2, 자바 JPA ORM 고급편 https://github.com/Kim-Gyuri/-Practice-SpringDataJPA
-- 실전 버전1, 코드정리  https://github.com/Kim-Gyuri/JPA-ORM--1
-- 
-* Querydsl 
-* JPA
+## 자바 ORM 표준
++ [연관관계매핑 기초](https://github.com/Kim-Gyuri/ORM-JPA--) 
++ [자바 JPA ORM 고급편](https://github.com/Kim-Gyuri/-Practice-SpringDataJPA) 
++ [실전 버전1, 코드정리](https://github.com/Kim-Gyuri/JPA-ORM--1) 
+
+
+## Querydsl 
++ [Querydsl](https://github.com/Kim-Gyuri/practice-Querydsl) 
+
+
 
 
 ## 5. 그 외 좋은 자료 추천
