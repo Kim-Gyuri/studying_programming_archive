@@ -56,11 +56,11 @@
 ### MVC2
 + [스프링 MVC2 타임리프 기본 기능](https://github.com/Kim-Gyuri/-MVC2--thymeleaf)
 + [스프링 MVC2 (1편에서 만든) 상품 관리 프로젝트를 개선해보자](https://github.com/Kim-Gyuri/spring-MVC2---)
-+ [스프링 MVC2 Validation](https://github.com/Kim-Gyuri/spring-MVC2--Validation-) --> 노트 :mvc2 검증+ 로그인처리
++ [스프링 MVC2 Validation](https://github.com/Kim-Gyuri/spring-MVC2--Validation-) ` 노트 :mvc2 검증+ 로그인처리/쿠키,세션`
 + [로그인 처리1 - 쿠키, 세션 강의정리](https://github.com/Kim-Gyuri/SpringMVC2--cookie-session)
-+ [스프링 MVC2 예외](https://github.com/Kim-Gyuri/springMvc2-exception)   -->노트 mvc2 API 예외처리
-+ [스프링 MVC2 컨버터](https://github.com/Kim-Gyuri/springMVC2-converter) -->노트: mvc2 컨버터
-+ [스프링 MVC2 업로드](https://github.com/Kim-Gyuri/springMVC2-upload)    -->노트: mvc2 업로드 
++ [스프링 MVC2 예외](https://github.com/Kim-Gyuri/springMvc2-exception)  `노트 mvc2 API 예외처리`
++ [스프링 MVC2 컨버터](https://github.com/Kim-Gyuri/springMVC2-converter) `노트: mvc2 컨버터`
++ [스프링 MVC2 업로드](https://github.com/Kim-Gyuri/springMVC2-upload)    `노트: mvc2 업로드 `
 
 
 ----
