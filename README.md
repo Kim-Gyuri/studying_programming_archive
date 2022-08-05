@@ -11,11 +11,13 @@
 *
 ## 2. Language
 ### JAVA
++ [자바 8 공부](https://github.com/Kim-Gyuri/java_8_study)
 + [자바 콘솔 프로젝트](https://github.com/Kim-Gyuri/JavaConsoleProject)
 + [자바 구구단 만들기](https://github.com/Kim-Gyuri/Getting-Started-Exercises-Gugudan)
 + [자바 달력 시스템 만들기](https://github.com/Kim-Gyuri/coding-java-calendar/blob/master/src/Scheduler/Calendar.java)
 
 ### SPRING
++ [스프링 crud 게시판 페이지 만들기](https://github.com/Kim-Gyuri/spring-board-crud-paging)
 + [스프링 jpa 쇼핑몰 만들기](https://github.com/Kim-Gyuri/spring-jpa-shop-web)
 + [스프링부트와 AWS로 혼자 구현하는 웹서비스 책 공부](https://github.com/Kim-Gyuri/webservice)
 
@@ -35,6 +37,9 @@
 
 
 ## 4. Web Programming ,인프런 강의
+### 더 자바, 코드를 조작하는 다양한 방법
++ [코드](https://github.com/Kim-Gyuri/javaStudy-library-framwork)
+
 ### Springboot + JPA
 + [실전1 코드](https://github.com/Kim-Gyuri/Spring-Boot-and-JPA-Utilization1---Lecture-Notes)
 + [실전1 정리노트](https://github.com/Kim-Gyuri/practice1-springboot-JPA)
@@ -78,4 +83,6 @@
 
 ## 5. 그 외 좋은 자료 추천
 * 취업 정보
-* 기타
+## 기타
++[html 써보기](https://github.com/Kim-Gyuri/web1)
+
