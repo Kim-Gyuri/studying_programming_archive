@@ -70,7 +70,7 @@
 + [스프링 핵심 원리 - 기본편](https://github.com/Kim-Gyuri/-) `강의필기정리 있음`
 
 ### Srping Data Jpa
-+ [실전 JPA -코드정리](https://github.com/Kim-Gyuri/-Practice-SpringDataJPA)
++ [실전 JPA -코드정리](https://github.com/Kim-Gyuri/-Practice-SpringDataJPA) `강의필기정리 있음`
 
 
 ### MVC 1
