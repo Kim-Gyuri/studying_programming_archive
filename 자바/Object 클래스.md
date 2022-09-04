@@ -29,3 +29,48 @@ public boolean equals(Object obj) {...}
 > 필드값이 모두 동일하다면 true를 리턴하고, 그렇지 않으면 false를 리턴한다.
 
 ## 예제: 객체 동등 비교 equals() 메소드
++ 의도한 대로 "홍길동"을 읽으려면, 다음과 같이 재정의한 hashCode() 메소드를 추가한다.
++ hashCode()의 리턴값을 number필드값으로 했기 때문에, 저장할 때 읽을 때의 같은 해시코드가 리턴된다.
++ 저장할 때 new Key(1), 읽을 때의 new Key(1)은 사실 서로 다른 객체이지만, <br> HashMap은 hashCode()의 리턴값이 같고 equals()의 리턴값이 true가 되기 때문에 <br> 동등한 객체로 인식한다는 뜻이다.
++ 객체의 동등 비교를 위해서는, Object의 equals()와 hashCode()메소드를 재정의해야 한다.
+
+```java
+import java.util.HashMap;
+
+class Key {
+    public int number;
+
+    public Key(int number) {
+        this.number = number;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (obj instanceof Key) {
+            Key compareKey = (Key) obj;
+            if(this.number == compareKey.number) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    @Override
+    public int hashCode() { //리턴값을 number로 했다 
+        return number; //--> 저장할 때의 new Key(1), 읽을 때의 new Key(1)으로, --> 같은 해시코드가 리턴된다.
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        //Key 객체를 식별키로 사용해서 String값을 저장하는 HashMap 객체 생성하기
+        HashMap<Key, String> hashMap = new HashMap<Key, String>();
+        
+        hashMap.put(new Key(1), "홍길동"); //식별키 new Key(1)로 "홍길동"을 저장한다.
+
+        String value = hashMap.get(new Key(1)); //식별키 new Key(1)로 "홍길동"을 읽어온다.
+        System.out.println(value);
+
+    }
+}
+```
