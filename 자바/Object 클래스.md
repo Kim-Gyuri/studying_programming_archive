@@ -74,3 +74,100 @@ public class Main {
     }
 }
 ```
+
+<br>
+
+### 예제: 이전 예제에서 사용한  Member 클래스 보완 - hashCode() 재정의
++ id 필드값이 같은 경우, 같은 해시코드를 리턴하도록 한다.
++ String의 hashCode()메소드의 리턴값을 활용한다.
++ String의 hashCode()는 같은 문자열일 경우, 동일한 해시코드를 리턴한다.
+
+```java
+import java.util.HashMap;
+
+class Member {
+    public String id;
+
+    public Member(String id) {
+        this.id = id;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (obj instanceof Member) {
+            Member member = (Member) obj;
+            if (id.equals(member.id)) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    @Override
+    public int hashCode() { //id가 동일한 문자열인 경우, 같은 해시코드를 리턴한다.
+        return id.hashCode();
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        HashMap<Member, String> hashMap = new HashMap<>();
+
+        hashMap.put(new Member("name"), "홍길동");
+
+        String value = hashMap.get(new Member("name"));
+        System.out.println(value);
+
+    }
+}
+```
+
+
+#### 결과
+```홍길동```
+
+## Object 클래스의 toString()메소드
++ 객체의 문자 정보를 리턴한다.
+> 객체의 문자 정보 : <br> 객체를 문자열로 표현한 것
+
+> Object클래스의 toString() 메소드는 '클래스이름@16진수해시코드'로 구성된 문자 정보를 리턴한다.
+
+<br>
+
++ java.util패키지의 Date클래스는 toString()메소드를 재정의하여 '현재 시스템의 날짜와 시간 정보'를 리턴한다. 
++ String클래스는 toString()메소드를 재정의해서 저장하고 있는 문자열을 리턴한다.
+
+### 예제 : SmartPhone 클래스에서 toString()메소드를 재정의
+```java
+class SmartPhone {
+    private String company;
+    private String os;
+
+    public SmartPhone(String company, String os) {
+        this.company = company;
+        this.os = os;
+    }
+
+    @Override
+    public String toString() {
+        return company + ", " + os;
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        SmartPhone myPhone = new SmartPhone("구글", "안드로이드");
+
+        String strObj = myPhone.toString(); //재정의된 toString() 호출
+        System.out.println(strObj);
+
+        System.out.println(myPhone); //객체인 경우, 재정의된 toString()을 호출하고 리턴값을 받아 출력한다.
+    }
+}
+```
+
+#### 결과
+```
+구글, 안드로이드
+구글, 안드로이드
+```
