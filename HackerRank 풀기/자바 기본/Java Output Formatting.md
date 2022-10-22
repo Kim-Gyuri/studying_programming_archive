@@ -11,6 +11,7 @@
 %b : boolean 형식으로 출력 <br>
 %e : 지수 형식으로 출력 <br>
 
+> [참고 사이트](https://codechacha.com/ko/java-printf-format/) 
 
 ## 문제 포인트
 + 첫번째 열에 15자를 제한한다. ("%-15s", s1)
