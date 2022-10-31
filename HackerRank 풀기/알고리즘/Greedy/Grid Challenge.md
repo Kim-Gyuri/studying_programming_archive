@@ -37,25 +37,28 @@ uvwxy <br>
 
 ## 풀이
 ```
-`1` String을 char로 전환한다.
+#1 String을 char로 전환한다.
   for() : char[] element = grid.get(i).toCharArray();
-  
-  # 자바 toCharArray():
+  > 자바 toCharArray():
   메소드는 문자열을 char형 배열로 바꿔준다. 
   반환되는 배열의 길이는 문자열의 길이와 같다.
   주의 문자열의 공백 또한 인덱스에 포함한다.
   
   
-`2` grid[i] 각각 사전순 정렬하기
+#2 grid[i] 각각 사전순 정렬하기
 Arrays.sort(element_ch);
 
 
-`3` grid[] -> 요소를 정렬한 값으로 교체하기
+
+#3 grid[] -> 요소를 정렬한 값으로 교체하기
 grid.add(i, Arrays.toString(element_ch));
 grid.remove(i+1);
+  > 자바 Arrays.toString(); 
+    배열을 넣으면 String 문자로 반환해준다.
 
 
-`4`  사전순 정렬이 맞는지 판단하기
+
+#4  사전순 정렬이 맞는지 판단하기
 for()루프를 돌려, 리스트 안을 탐색하면서 if(현재값>다음값)에 해당되면 "NO"로 판단,
 for()루프를 다 돌고도 if()를 통과했다면 "YES"로 판단한다.
 for() {
@@ -70,7 +73,7 @@ if(grid.get(j+1).charAt(i)<grid.get(j).charAt(i))
 
 
 
-`제출코드` 
+# 제출코드
     // Write your code here
         for (int i=0; i<grid.size(); i++) {
             char[] element_ch = grid.get(i).toCharArray();
