@@ -12,7 +12,7 @@
 #### Constraints
 > 2 ≤ n ≤ 10⁵ <br>
 > 2 ≤ k ≤ n <br>
-> 0 ≤ arr[i] ≤ 10⁹ <br>
+> 0 ≤ arr[i] ≤ 10⁹ (최솟값은 0) <br>
 
 ### 예시
 + sample 0
@@ -65,12 +65,30 @@ selecting the 2 integers[2,2] or integer[1,1],
 + loop length : len(arr)-k+1
 ```
 K는 불공정성을 시험할 부분 배열의 길이이다.
-그리고 이것은 주어진 배열을 가로지르는 단계 크기를 제공한다.
-예를들면,
-만약 원래 배열의 길이가 5이고 k가 2라면,
-길이 2의 모든 하위 배열을 테스트해야 합니다.
-이 예에서는 (5-2) + 1과 같이 4단계로 수행할 수 있습니다.
-이것이 도움이 되었기를 바랍니다.
+-> 주어진 배열을  k 크기만큼 잘라서 Unfairness을 찾아야 한다.
+
+
+# 예를들면 
+:주어진 배열의 길이가 5이고 k가 2라면,
+(1) 길이 2의 모든 하위 배열을 테스트해야 한다.
+(2)for (int i=0; i<arr.size()-k+1; i++) {
+    --> 정렬된 배열을 가지고 k-arr.size() 만큼 이동시키면서 
+        모든 값을 기록한후에 마지막에 min_unfairness(최솟값)을 출력해주면 된다.
+```
+
+<br>
+
++  current_unfairness 구하기
+```
+(1) 해당 최솟값을 찾기 위해 변수 하나를 선언해준다.
+    int min_unfairness = Integer.MAX_VALUE; (-> 이 값은 대충 a[i]와 비교하기 위해 큰 값을 줌)
+    
+(2) int current_unfairness = arr.get(i+(k-1)) - arr.get(i); 
+    현재 최솟 unfairness값을 구한다.
+    예: arr[1,2,4,7] k=2일 때, arr`=[4,7] unfairness = max(4,7) min(4,7) = 7-4 = 3 
+    i=2일 때,  "arr[3]-arr[2]= 7-4 = 3 
+    
+(3) 반복문을 돌려서 min_unfairness보다 작으면 current_unfairness을 바꿔주면서 최솟갓을 구한다. 
 ```
 
 ## 코드
