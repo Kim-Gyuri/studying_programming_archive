@@ -1,11 +1,11 @@
 # studying_programming_archive
 자바 백엔드 공부 저장소입니다. <br><br>
 # &#128203; Table of Contents
-[1. Interview](#1-headers-헤더)<br>
-[2. Language](#2-emphasis-강조)<br>
-[3. CS](#3-blockquotes-인용)<br>
-[4. Web Programming](#4-lists-목록)<br>
-[5. 그 외 좋은 자료 추천](#5-그-외-좋은-자료-추천)<br><br><br>
+[1. Interview](#1-Interview) <br>
+[2. Language](#2-Language) <br>
+[3. CS](#3-CS) <br>
+[4. Web Programming](#4-Web-Programming) <br>
+[5. 그 외 좋은 자료 추천](#5-그-외-좋은-자료-추천) <br><br><br>
 
 ## 1. Interview
 `참고할 사이트`
