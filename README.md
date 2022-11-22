@@ -17,6 +17,7 @@
 ## 2. Language
 ### JAVA
 `개인공부 정리`
++ [자바 노트정리](https://github.com/Kim-Gyuri/studying_programming_archive/tree/main/%EC%9E%90%EB%B0%94) <br>
 + [자바 8 공부](https://github.com/Kim-Gyuri/java_8_study)
 + [자바 콘솔 프로젝트](https://github.com/Kim-Gyuri/JavaConsoleProject)
 + [자바 구구단 만들기](https://github.com/Kim-Gyuri/Getting-Started-Exercises-Gugudan)
@@ -38,6 +39,7 @@
 + [알고리즘 개념 2편](https://github.com/Kim-Gyuri/Java_datastructure_algorithm2)
 + [리트코드 풀이](https://github.com/Kim-Gyuri/leetcode)
 + [백준 풀이](https://github.com/Kim-Gyuri/studying_programming_archive/tree/main/%EB%B0%B1%EC%A4%80%ED%92%80%EA%B8%B0) <br>
++ [Hackerrank 풀이](https://github.com/Kim-Gyuri/studying_programming_archive/tree/main/HackerRank%20%ED%92%80%EA%B8%B0) <br>
 
 `참고할 사이트` <br>
 + [알고리즘 개념정리 - 티스토리](https://bcp0109.tistory.com/67?category=850495)
