@@ -1,7 +1,7 @@
 ## 문제
-input 1 Line : the number of elements in the sequence.
-input 2 Line : elements in the sequence.
-output : the values of y for all x in the arithmetic sequence 1 to n.
+input 1 Line : the number of elements in the sequence. <br>
+input 2 Line : elements in the sequence. <br>
+output : the values of y for all x in the arithmetic sequence 1 to n. <br>
 
 ### Sample
 ```
