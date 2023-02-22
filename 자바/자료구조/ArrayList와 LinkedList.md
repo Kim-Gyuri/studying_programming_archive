@@ -118,6 +118,8 @@ public class Main {
 
 ## Array 를 기반으로한 Linked List 구현
 ```java
+package hackerrank;
+
 class LinkedList {
     private Node[] elementData = new Node[100];
     private Node head;
@@ -131,10 +133,8 @@ class LinkedList {
 
     private class Node {
         private Object data;
-        private Node next;
         public Node(Object input) {
             this.data = input;
-            this.next = null;
         }
 
         public String toString() {
@@ -151,7 +151,9 @@ class LinkedList {
     boolean addLast(Object element) {
         Node newNode = new Node(element);
         elementData[size] = newNode;
+        head = elementData[0];
         size++;
+        tail = elementData[size-1];
         return true;
     }
 
@@ -162,7 +164,9 @@ class LinkedList {
         }
         Node newNode = new Node(element);
         elementData[index] = newNode;
+        head = elementData[0];
         size++;
+        tail = elementData[size-1];
         return true;
     }
 
@@ -181,7 +185,9 @@ class LinkedList {
         for (int i=index+1; i<=size-1; i++) {
             elementData[i-1] = elementData[i];
         }
+        head = elementData[0];
         size--;
+        tail = elementData[size-1];
         elementData[size] = null;
         return removed;
     }
@@ -199,10 +205,18 @@ class LinkedList {
     }
 
     int indexOf(Object o) {
-        for (int i=0; i<size; i++) {
-            if (o.equals(elementData[i])) return i;
+        Node node = new Node(o);
+        int index = 0;
+        for (Node element : elementData) {
+            if (element.toString().equals(node.toString())) return index;
+            index++;
         }
-        return -1;
+        if (index == elementData.length) index = -1;
+        return index;
+    }
+
+    void printHead_Tail() {
+        System.out.println("[head] " + head.toString() + ", [tail] " + tail.toString());
     }
 
 }
@@ -210,17 +224,22 @@ class LinkedList {
 public class Main {
 
     public static void main(String[] args) {
-       LinkedList ll = new LinkedList();
-       ll.addFist(10);
-       ll.addFist(20);
-       ll.addFist(30);
-       ll.add(0,50);
-       ll.addLast(40);
-       System.out.println(ll.toString());
+        LinkedList ll = new LinkedList();
+        ll.addFist(10);
+        ll.addFist(20);
+        ll.addFist(30);
+        ll.add(0,50);
+        ll.addLast(40);
+        
+        System.out.println(ll.toString());
+        ll.printHead_Tail();
+        int index = ll.indexOf(40);
+        System.out.println("indexOf(40) = " + index);
+        
+        ll.remove(3);
+        ll.removeFirst();
+        System.out.println(ll.toString());
 
-       ll.remove(3);
-       ll.removeFirst();
-       System.out.println(ll.toString());
     }
 
 }
