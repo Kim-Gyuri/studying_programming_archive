@@ -226,3 +226,122 @@ public class Main {
 }
 ```
 
+## ArrayList를 기반으로한 Linked List 구현
+```java
+import java.util.ArrayList;
+
+class LinkedList {
+    private static ArrayList<Node> elementData = new ArrayList<>();
+    private static Node head;
+    private static Node tail;
+    private static int size;
+
+    public LinkedList() {
+        this.size = elementData.size();
+        if (size < 1) {
+            this.head = null;
+            this.tail = null;
+        } else {
+            this.head = elementData.get(0);
+            this.tail = elementData.get(size);
+        }
+    }
+
+    private class Node {
+        private Object data;
+        public Node(Object input) {
+            this.data = input;
+        }
+        public String toString() {
+            return String.valueOf(this.data);
+        }
+    }
+
+    void addFist(Object element) {
+        add(0, element);
+    }
+
+    boolean addLast(Object element) {
+        Node newNode = new Node(element);
+        elementData.add(newNode);
+        head = elementData.get(0);
+        size++;
+        tail = elementData.get(size-1);
+        return true;
+    }
+
+    boolean add(int index, Object element) {
+        Node newNode = new Node(element);
+        elementData.add(index, newNode);
+        head = elementData.get(0);
+        size++;
+        tail = elementData.get(size-1);
+        return true;
+    }
+
+    public String toString() {
+        return elementData.toString();
+    }
+
+    Node remove(int index) {
+        Node removed = elementData.get(index);
+        elementData.remove(removed);
+        head = elementData.get(0);
+        size--;
+        tail = elementData.get(size-1);
+        return removed;
+    }
+
+    Node removeFirst() {
+        return remove(0);
+    }
+
+    Node removeLast() {
+        return remove(size-1);
+    }
+
+    int size() {
+        return size;
+    }
+
+    int indexOf(Object o) {
+        Node node = new Node(o);
+        int index = 0;
+        for (Node element : elementData) {
+            if (element.toString().equals(node.toString())) return index;
+            index++;
+        }
+        if (index == elementData.size()) index = -1;
+        return index;
+    }
+
+    void printHead_Tail() {
+        System.out.println("[head] " + head.toString() + ", [tail] " + tail.toString());
+    }
+
+}
+
+public class Main {
+
+    public static void main(String[] args) {
+        LinkedList ll = new LinkedList();
+        ll.add(0,10);
+        ll.add(0,20);
+        ll.add(0,30);
+        ll.add(0,50);
+        ll.addLast(40);
+        ll.addFist(60);
+        System.out.println(ll.toString());
+
+        System.out.print("print -> ");
+        ll.printHead_Tail();
+
+        ll.remove(3);
+        ll.removeFirst();
+        System.out.println(ll.toString());
+
+        System.out.println("ll.indexOf(40) = " + ll.indexOf(40));
+    }
+
+}
+```
