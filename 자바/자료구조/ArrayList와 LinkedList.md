@@ -1,5 +1,5 @@
 # DataStructure
-+ (Array vs ArrayList vs LinkedList)[#Array-vs-ArrayList-vs-LinkedList]
++ [Array vs ArrayList vs LinkedList](#Array-vs-ArrayList-vs-LinkedList)
     + Array
     + ArrayList
     + LinkedList
