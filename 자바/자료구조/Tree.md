@@ -3,9 +3,11 @@
 + Tree의 관련용어
 + Binary Tree (이진 트리)
 + BST (Binary Search Tree)
-+ Binary Search Tree 구현하기
 + 주어진 트리가 Binary 트리인지 확인하는 알고리즘 구현하기
-  + 
+  + using inorde
+  + without array
+  + max & min
+    
 + 참고자료
 
 ## Tree의 정의
@@ -69,6 +71,15 @@ child node가 최대 2개까지 붙는다. <br>
 > 균형을 잡기 위한 트리 구조의 재조정을 Rebalancing이라 한다. <br>
 > 이 기법을 구현한 트리에는 Red-Black Tree이다.
 
+
+## 주어진 트리가 Binary 트리인지 확인하는 알고리즘 구현하기
+```
+어떤 노드를 봐도, 노드의 왼쪽트리들은 자기보다 작은 값을 가지고
+노드의 오른쪽 트리들은 자기보다 큰 값을 가진다.
+```
+#### [방법1 - inorder (L, root, R)](https://github.com/Kim-Gyuri/Java_datastructure_algorithm2/blob/master/%EB%85%B8%ED%8A%B8/23.%20%EC%9D%B4%EC%A7%84%ED%8A%B8%EB%A6%AC%EA%B2%80%EC%83%89%20-%201%20using%20inorder.md) <br>
+#### [방법2 - without array](https://github.com/Kim-Gyuri/Java_datastructure_algorithm2/blob/master/%EB%85%B8%ED%8A%B8/24.%20%EC%9D%B4%EC%A7%84%ED%8A%B8%EB%A6%AC%EA%B2%80%EC%83%89%20-%202%20%20without%20array.md) 
+#### [방법3 - max & min](https://github.com/Kim-Gyuri/Java_datastructure_algorithm2/blob/master/%EB%85%B8%ED%8A%B8/25.%20%EC%9D%B4%EC%A7%84%ED%8A%B8%EB%A6%AC%EA%B2%80%EC%83%89%20-%203%20max%20%26%20min.md)
 ## 참고자료
 [Tree란](https://namu.wiki/w/%ED%8A%B8%EB%A6%AC(%EA%B7%B8%EB%9E%98%ED%94%84)) <br>
 [자료구조 참고글](https://github.com/JaeYeopHan/Interview_Question_for_Beginner/tree/master/DataStructure#array-vs-linked-list) <br>
