@@ -10,7 +10,7 @@
 + 해시 버킷 동적 확장(Resize)
 + 참고자료
 
-HashTable을 정리하기 전에, 우선 `배열과 해시태이블의 차이점`을 정리했다.
+HashTable을 정리하기 전에, 우선 [배열과 해시태이블의 차이점](https://github.com/Kim-Gyuri/studying_programming_archive/blob/main/%EC%9E%90%EB%B0%94/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0/%EB%B0%B0%EC%97%B4%EA%B3%BC%20%ED%95%B4%EC%8B%9C%ED%83%9C%EC%9D%B4%EB%B8%94%EC%9D%98%20%EC%B0%A8%EC%9D%B4%EC%A0%90.md)을 정리했다.
 
 ## HashTable란?
 ![해시 테이블 예제](https://user-images.githubusercontent.com/57389368/221553978-e5e99108-1e3f-45de-9cbb-db9f3f7517e8.png) <br>
