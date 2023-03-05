@@ -8,7 +8,11 @@
 [5. 그 외 좋은 자료 추천](#5-그-외-좋은-자료-추천) <br><br><br>
 
 ## 1. Interview
-`참고할 사이트`
++ [면접준비 글정리](https://github.com/Kim-Gyuri/studying_programming_archive/blob/main/%EB%A9%B4%EC%A0%91/%EA%B0%9C%EB%B0%9C%20%EC%83%81%EC%8B%9D.md)
+
+<br>
+
+`추천 자료`
 + [고퀄리티⚡개발 컨텐츠 모음 - 깃허브](https://github.com/Integerous/goQuality-dev-contents)
 + [Technical Interview Guidelines for Beginners - 깃허브](https://github.com/JaeYeopHan/Interview_Question_for_Beginner)
 + [신입 개발자 전공 지식 & 기술 면접 백과사전 (블로그)](https://gyoogle.dev/blog/)
