@@ -10,7 +10,7 @@
 + Uniform Interface을 자세히 정리한 것
   + REST API란?
   + 자원에 대한 식별 (identification of resources)
-  + 표현을 통한 자원에 대한 조작
+  + 표현을 통한 자원에 대한 조작 (manipulation of resources through reresentations)
   + 서술적 메시지 (self-descriptive messages)
   + HATEOAS (hypermedia as the engine of application state)
   + 꼭 REST API 이여야 하는 걸까?
@@ -56,27 +56,23 @@ REST는 HTTP 표준에만 따른다면, 어떠한 기술이라든지 사용이 �
 > `구현` <br>
 > HTTP 프로토콜 표준에서 사용하는 "Last-Modified" 태그나 "E-Tag"를 이용하면 Cashing을 구현할 수 있다. <br>
 > <br><br>
-> `예시` <br>
-> "Last Modified 필드를 이용한 Cashing 처리방식" 
-> (1) 첫번째 요청, <br>
->   Client가 HTTP GET 요청을 보낼 때, <br>
->   검증 헤더(Last-Modified)를 추가했다. (데이터가 마지막에 수정된 시간을 포함해서 전송한다.) <br>
+> `예시` : "Last Modified 필드를 이용한 Cashing 처리방식"  <br>
+> (1) 첫번째 요청, <br> <br>
+>  ![검증헤더를 추가했을 때 첫번째 요청](https://user-images.githubusercontent.com/57389368/222969130-67520309-72a8-44b9-9fd1-b410fdfd4cb3.png) <br>
+>   Client가 HTTP GET 요청을 보낼 때, 검증 헤더(Last-Modified)를 추가했다. (데이터가 마지막에 수정된 시간을 포함해서 전송한다.) <br>
 >   받은 응답을 브라우저 캐시에 저장한다. <br>
-> <br>
->  (2) 두번째 요청을 보낸다. (캐시 시간이 초과된 경우) <br>
->   GET 요청했을 때, 먼저 브라우저 캐시를 조회한다. (캐시 유효시간이 초과된 경우) <br>
->   서버에 (최종수정일을 포함하여) 재요청한다. <br>
->   서버는 요청에 대해 검증한다.(수정된 것이 있는지 확인) <br>
->   서버가 Client에게 (HTTP헤더만) 응답을 전송한다.  <br>
->  서버는 (이때 수정된 것이 없다면) "304 Not Modified" 리턴, HTTP Body 없이 보낸다. <br>
->  다시 브라우저 캐시가 갱신된다. <br>
-> <br>
-> (3) 세번째 요청을 보낸다.<br>
-> if-modified-since(조건부)를 포함한다.<br>
-> (브라우저에서 해당 리소스를 재요청할 경우에는 서버에서 Last-Modified 헤더에 설정한 값을 If-Modified-Since 헤더에 포함시켜 서버에 요청합니다.)<br>
-> 캐시 수정일을 판단 시 사용된다.<br>
+> <br> <br><br>
+>  (2) 두번째 요청을 보낸다. (캐시 시간이 초과된 경우) <br><br>
+>  ![검증헤더 추가했을 떄 두 번째 요청 캐시시간 초가](https://user-images.githubusercontent.com/57389368/222969977-5fdf5d66-03e5-44f3-b031-97afdfe57b2c.png) <br>
+>  GET 요청했을 때, 먼저 브라우저 캐시를 조회한다. <br>
+>  캐시 유효시간이 초과된 경우, 서버에 (최종수정일을 포함하여) 재요청한다. <br>
+> (재요청 : 브라우저에서 해당 리소스를 재요청할 경우에는 <br> 서버에서 Last-Modified 헤더에 설정한 값을 If-Modified-Since 헤더에 포함시켜 서버에 요청합니다.) <br><br>
+>  서버는 요청에 대해 검증한다. (수정된 것이 있는지 확인) <br>
+>  서버가 Client에게 (HTTP헤더만) 응답을 전송하는데, 캐시 수정일을 판단 시 사용된다.<br>
 > -> 데이터 미변경 경우 ( 캐시 == 서버 데이터), "304 Not Modified" 헤더 데이터만 보낸다.<br>
 > -> 데이터 업데이트 경우 (캐시 != 서버 데이터), "200 ok" 모든 데이터(Header, Body 포함) 전송한다.
+>  다시 브라우저 캐시가 갱신된다. <br>
+
 
 <br>
 
@@ -103,37 +99,40 @@ REST는 HTTP 표준에만 따른다면, 어떠한 기술이라든지 사용이 �
 
 ## Uniform Interface을 자세히 정리한 것
 #### REST API란?
-REST 아키텍쳐 스타일에 부합하는 API -> Uniform Interface 초점에서 <br>
-아래 4가지를 만족해야 REST API라고 부를 수 있다는 주장이다.
+`REST` :  자원에 대한 표현 전송한다. <br>
+![REST API란](https://user-images.githubusercontent.com/57389368/222970498-065a78a2-3472-4e05-ba33-f68c78bf1a5d.png) <br>
+
+```
+ REpresentational State Transfer  : 자원의 상태를 전송한다.
+                                      # 자원의 상태: 자원의 현재 상태 또는 자원의 기대되는 상태
+```
+
+REST 아키텍쳐 스타일에 부합하는 API -> `Uniform Interface 초점에서` 아래 4가지를 만족해야 REST API라고 부를 수 있다는 주장이다.
+
+<br>
 
 #### 1. 자원에 대한 식별 (identification of resources)
 > 자원은 객체 <br>
 > 객체는 시간에 따라 변화/파괴 되기도한다. <br>
-> 그래서, 변하지 않은 식별자가 필요하다. : 식별자는 URI다.  <br>
-> 예: user/1 <br>
+> 그래서, 변하지 않은 식별자가 필요하다. : 식별자는 URI다. (예: user/1) <br>
 
 <br>
 
-#### 2. 표현을 통한 자원에 대한 조작  
-(manipulation of resources through reresentations)
-
+#### 2. 표현을 통한 자원에 대한 조작 (manipulation of resources through reresentations)
 + 표현: 특정한 상태의 자원에 대한 표현
 + 자원은 (예: 문서, 파일, HTTP 메시지 엔티티) 방식으로 표현 가능하다.
+> `예 1` <br>
+>  ![특정한 상태의 자원에 대한 표현 1](https://user-images.githubusercontent.com/57389368/222970531-c93242ee-98c0-4912-9d40-e5c57de52036.png) <br>
+> Client는 응답( HTTP/1.0 200 ok content-type...)을 받았다. <br>
+> Client가 server에 "GET /user/1 HTTP/1.1"을 요청하면, 자원을 문서로 현재 상태를 표현했다고 한다. <br>
+> <br> <br>
+> `예 2` <br>
+> ![특정한 상태의 자원에 대한 표현 2](https://user-images.githubusercontent.com/57389368/222970606-35d9cbf1-6009-4089-aea1-f03325cdb6e9.png) <br>
+> 이미지 형식으로 서버에게 "POST /image/이미지"을 요청한다면, <br>
+> 서버에서는 이미지 표현을 바탕으로 새로운 이미지 자원을 생성한다. <br>
+> /image/1를 식별자로 할당한다. <br><br>
 
-```
-사용자 -> HTTP/1.0 200 ok content-type...
-
-그래서, 클라이언트가 서버에 "GET /user/1 HTTP/1.1"을 요청하면
--> 자원을 문서로 현재 상태를 표현했다고 한다.
-
-또한 이미지 형식으로 서버에게 "POST /image/이미지"을 요청한다면,
-서버에서는 이미지 표현을 바탕으로 새로운 이미지 자원을 생성한다.
-/image/1를 식별자로 할당한다.
-# REST :자원에 대한 표현 전송한다.
-REpresentational State Transfer  : 자원의 상태를 전송한다.
-                                     # 자원의 상태: 자원의 현재 상태 또는 자원의 기대되는 상태
-
-```
+<br>
 
 #### 3. 서술적 메시지 (self-descriptive messages)
 `포인트` <br>
@@ -157,8 +156,9 @@ HTTP/1.1부터는 Cache-Control,Age,Etag,Vary 통해 커스텀 가능
 <br>
 
 #### 4. HATEOAS (hypermedia as the engine of application state)
-매번 URI 입력하는 방법은 까다롭다.
-화면에 랜더링된 하이퍼미디어를 통해 페이지 이동가능하다.
+![하이퍼미디어](https://user-images.githubusercontent.com/57389368/222971645-f514db59-bf8a-4a13-8dbb-9c8c9303cd8d.png) <br>
++ 매번 URI 입력하는 방법은 까다롭다.
++ 화면에 랜더링된 하이퍼미디어를 통해 페이지 이동가능하다.
 
 #### 심화 : "HATEOAS 위배 사례"
 숨겨진 경로가 존재한다면? <br>
@@ -169,8 +169,9 @@ HTTP/1.1부터는 Cache-Control,Age,Etag,Vary 통해 커스텀 가능
 > 이때 "json에 URI 등 요청정보를 포함하여 클라이언트에게 전송하면 괜찮을 것이다" 라는 주장도 있다.
 
 ```
-예:
-"/email 또는 /images 에 대해 GET 요청을 보낼 수 있다" 요청정보를 json에 담아 보낸다면,
+예: "/email 또는 /images 에 대해 GET 요청을 보낼 수 있다" 
+
+요청정보를 json에 담아 보낸다면,
 벡엔드에서 HATEOAS 위배되지 않을 것이라는 주장이다.
 
 "href" : http://~/email",         
