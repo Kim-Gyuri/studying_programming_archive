@@ -14,7 +14,7 @@
 + Graph
 
 
-## [네트워크](https://github.com/Kim-Gyuri/studying_programming_archive/tree/main/%EB%A9%B4%EC%A0%91/part%20%EC%A0%95%EB%A6%AC/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC)
+## [네트워크](https://github.com/Kim-Gyuri/studying_programming_archive/blob/main/%EB%A9%B4%EC%A0%91/part%20%EC%A0%95%EB%A6%AC/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC.md)
 + HTTP GET POST 비교
   + GET
   + POST
