@@ -8,7 +8,7 @@
 [5. 그 외 좋은 자료 추천](#5-그-외-좋은-자료-추천) <br><br><br>
 
 ## 1. Interview
-+ [면접준비 글정리](https://github.com/Kim-Gyuri/studying_programming_archive/blob/main/%EB%A9%B4%EC%A0%91/%EA%B0%9C%EB%B0%9C%20%EC%83%81%EC%8B%9D.md)
++ [📚 나의 면접준비 아카이브](https://github.com/Kim-Gyuri/studying_programming_archive/tree/main/%EB%A9%B4%EC%A0%91#readme)
 
 <br>
 
