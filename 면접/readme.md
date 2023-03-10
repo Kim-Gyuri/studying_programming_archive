@@ -12,3 +12,22 @@
 + Tree
 + Hash Table
 + Graph
+
+
+## [네트워크](https://github.com/Kim-Gyuri/studying_programming_archive/tree/main/%EB%A9%B4%EC%A0%91/part%20%EC%A0%95%EB%A6%AC/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC)
++ HTTP GET POST 비교
+  + GET
+  + POST
+  + 어떻게 사용해야 할까?
++  HTTP와 HTTPS
+   + HTTP
+   + HTTP와 HTTPS의 차이점
+   + HTTP는 Stateless 이라면 HTTPS는 무슨 상태인지?
+   + 모든 웹 페이지에서 HTTPS를 사용해도 될까?
+   + HTTPS의 동작 과정
++  프로토콜 구조
++ TCP 3-way handshake
++ TCP & UDP
+  + TCP
+  + UDP
++  웹 브라우저 요청 흐름
