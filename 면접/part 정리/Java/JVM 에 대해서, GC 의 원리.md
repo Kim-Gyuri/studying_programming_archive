@@ -96,6 +96,11 @@ method의 byte code가 저장되는 영역을 말한다.
 
 <br>
 
+#### Heap Area
+객체 생성하는 메모리 공간이다. <br> new 연산자로 생성된 객체와 배열을 저장한다.
+
+<br>
+
 #### Native Method Area
 자바가 아닌 다른 언어로 작성된 코드를 바이트 코드로 전환하여 저장한다.
 
@@ -112,7 +117,8 @@ Class Solution {
     }
 
     private static int add(int a, int b) {
-        return a+b;
+        int sum = a+b;
+        return sum;
     }
 }
 ```
@@ -158,9 +164,6 @@ Class Solution {
 <br>
 
 ### static 키워드가 없는 경우 로딩하는 방법
-객체를 생성하는 부분이 추가된다.
-> heap Area: 객체 생성 영역 메모리, new 연산자 가 추가된다.
-
 > `예시`
 ```java
 Class Solution {
@@ -173,29 +176,31 @@ Class Solution {
     }
 
     public int add(int a, int b) {
-        return a+b;
+        int sum = a+b;
+        return sum;
     }
 }
 ```
 
-![static 키워드가 없는 경우, 로딩하는 방법](https://user-images.githubusercontent.com/57389368/225221103-58b54469-c7dd-474b-afca-375149cb0813.png) <br><br>
+![static 키워드가 없는 경우, 로딩하는 방법](https://user-images.githubusercontent.com/57389368/225325715-cfa3b89a-e9a9-436b-b255-373503be09b6.png) <br><br>
 
 
-+ 1~3 단계까지 똑같다.
+#### add()를 호출하기 위해 객체를 생성해야 한다.
 
 <br>
 
 #### 근데 add() 메소드를 호출하기 위해 어떻게 메모리에 올릴 수 있을까?
 객체를 생성한다.  <br>
 ```
-TPC08 tpc = new TPC08();
-int v = tpc.add(a,b); 
+        Solution sol = new Solution();
+        int v = sol.add(a,b);
 ```
 
 + 객체를 생성하면 heap Area에 객체가 올라온다.
-+ TPC08의  관련 메서드 add가 잡힌다.
-+ 그 다음, method area non-static zone에 올라온다. (heap area와 포인터로 연결)
-+ tpc.add()를 실행하면 stack Area에 메서드 정보다 저장된다.
++ 클래스 Solution의 관련 메서드 add()가 잡힌다.
++ 그 다음, method area non-static zone에 올라온다. <br> (add는 non-static zone에 잡힌  번지가 포인터가 가리킨 형식이다.) <br>
++ main() 안에는 sol 변수가 있다. <br> (sol 변수는 포인터로 heap 메모리에 있는 객체를 가리키고 있다.) 
++ sol.add()를 실행하면 stack Area에 메서드 정보가 저장되고 동작된다.
 
 
 ## GC의 원리
