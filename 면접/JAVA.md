@@ -1,6 +1,6 @@
 # 📌 목차
 + JVM 에 대해서, GC 의 원리
-+ 
++ 컬렉션
 + Generic
 + Annotation
 + Overriding vs Overloading
