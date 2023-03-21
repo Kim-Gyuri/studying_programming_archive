@@ -33,6 +33,20 @@ n = 4 -> A:3, B:2  result:5
 
 <br>
 
++ n=3 부터 규칙이 적용되도록, 값을 초기화해준다.
+```
+n개가 제시되었을 때,
+직사각형 n*2 의 dp[1], dp[2]를 정의해두자.
+
+dp[n] = dp[n-1] dp[n-2]
+dp[1] = 1  # n=1 이므로,  [A]
+dp[2] = 2  # n=2 이므로, [AA, BB]
+```
+![2xn 타일 ](https://user-images.githubusercontent.com/57389368/226530811-47377a38-fc11-4df8-aebd-1ab662342bde.png)
+
+
+<br><br>
+
 ### 코드
 ```java
 package hackerrank;
