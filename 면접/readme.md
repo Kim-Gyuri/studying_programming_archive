@@ -41,3 +41,37 @@
 + 접근 제한자(Access Modifier)
 + Wrapper class
 + final keyword
+
+## [예상질문](https://github.com/Kim-Gyuri/studying_programming_archive/blob/main/%EB%A9%B4%EC%A0%91/%EC%98%88%EC%83%81%EC%A7%88%EB%AC%B8.md)
++ CVS, SVN, Git
++ 64비트 32비트 CPU와 운영체제 에 대하여
++ 프로세스와 쓰레드의 차이점에 대해서 설명해 보시오.( 메모리 구조 포함 )
++ ‘데드락’ 이란 무엇이고 이를 해결하기 위한 방법을 설명해 보시오.
++ 변수 명명법이 중요한 이유에 대해서 설명하고 예를 들어 보시오.
++ 자바의 JVM의 역할에 대해서 설명해 보시오.
++ Linux에서 톰캣 환경설정을 잡는 것에 대해 설명해 보시오.
++  WAS와 웹서버의 차이점
++ Jquery와 Ajax
++ 비동기와 동기 방식의 차이점에 대해서 말해보시오.(네트워크 동기,비동기 아님)
++ 개발시에 중요하다 생각하는 요소를 3가지 기술해 보시오.
++ 스프링의 MVC
++ AOP란
++ 에자일 방법론
++ 스프링 환경설정 혼자 잡을 수 있는가? 대강 어떻게 해야하는지 설명해 보시오.
++ 웹서버 내부 구동 방식
++ 스프링 DI란?
++ UML 그려본 적 있는가?
++ 스프링을 사용하지 않고 MVC를 JSP에서 만들어 보았는가?
++ 캐시와 세션의 공통점과 차이점에 대해 말해보시오.
++ 디자인 패턴을 써본 적이 있는지?
++ 크롬이나 파이어폭스에서 개발도구를 사용해 디버깅을 해보았는가?
++ JDBC는 무엇인가?
++ DB 옵티마이저에 대해 아는가?
++ Servlet vs JSP
++ Filter와 Interceptor
++ 추상메서드? 추상 클래스?
++ Interface, Abstract
++ Call by Reference, Call by Value
++ Static의 의미
++ 싱글톤 패턴
++ Database에서 Index란?
