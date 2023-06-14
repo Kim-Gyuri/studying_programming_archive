@@ -31,3 +31,13 @@
   + TCP
   + UDP
 +  웹 브라우저 요청 흐름
+
+## [JAVA](https://github.com/Kim-Gyuri/studying_programming_archive/blob/main/%EB%A9%B4%EC%A0%91/JAVA.md)
++ JVM 에 대해서, GC 의 원리
++ 컬렉션
++ Generic
++ Annotation
++ Overriding vs Overloading
++ 접근 제한자(Access Modifier)
++ Wrapper class
++ final keyword
