@@ -115,7 +115,7 @@
 + [연관관계매핑 기초](https://github.com/Kim-Gyuri/ORM-JPA--) 
 + [자바 JPA ORM 고급편](https://github.com/Kim-Gyuri/-Practice-SpringDataJPA) `강의노트는 여기에 있음`
 + [실전 버전1, 코드정리](https://github.com/Kim-Gyuri/JPA-ORM--1) 
-
++ [책 - 자바 ORM 표준 JPA 프로그래밍](https://github.com/Kim-Gyuri/java_orm_standard_jpa_programming_bookStudy) `필기정리`
 
 ### Querydsl 
 + [Querydsl](https://github.com/Kim-Gyuri/practice-Querydsl) 
