@@ -42,7 +42,8 @@
 + Wrapper class
 + final keyword
 
-## [예상질문](https://github.com/Kim-Gyuri/studying_programming_archive/blob/main/%EB%A9%B4%EC%A0%91/%EC%98%88%EC%83%81%EC%A7%88%EB%AC%B8.md)
+## 예상질문
+### [예상질문1](https://github.com/Kim-Gyuri/studying_programming_archive/blob/main/%EB%A9%B4%EC%A0%91/%EC%98%88%EC%83%81%EC%A7%88%EB%AC%B8.md)
 + CVS, SVN, Git
 + 64비트 32비트 CPU와 운영체제 에 대하여
 + 프로세스와 쓰레드의 차이점에 대해서 설명해 보시오.( 메모리 구조 포함 )
@@ -75,3 +76,35 @@
 + Static의 의미
 + 싱글톤 패턴
 + Database에서 Index란?
+
+### [예상질문2](https://github.com/Kim-Gyuri/studying_programming_archive/blob/main/%EB%A9%B4%EC%A0%91/%EC%98%88%EC%83%81%EC%A7%88%EB%AC%B82.md)
++ Servlet / JSP 차이점 설명
++ Get/Post 방식
++ Session과 Cookie
++ spring 특징
++ ORM, JPA, Hibernate
++ @SpringBootApplication이란?
++ BeanFactory와 ApplicationContext의 차이점
++ 스프링 컨테이너의 생명주기
++ 스프링에서 AOP
++ Spring을 사용하면 이점
++ @Controller, @Service, @Repository 차이
++ DAO, DTO, VO
++  spring과 springboot차이
++  mvc 패턴 실행흐름
++  dispatcher servlet
++  servlet
++ spring security
++ filter interceptor 차이
++ spring Annotation
++ @Controller, @RestController 
++ 영속성 컨텍스트
++ N+1 문제, 패치조인
++ Git
++ Transaction
++ Spring Framework에서 사용되는 디자인 패턴의 이름을 지정하십시오.
++ Spring에 Bean을 어떻게 주입할 수 있는지?
++ 어떤 Spring 하위 ​​프로젝트를 알고 있습니까? 간략하게 설명하십시오.
++ 스프링 프레임 워크 란?
++ Spring을 사용하면 어떤 이점이 있습니까?
++ 스프링(Spring)에서 자주 사용하는 Annotation 개념 및 예제 정리
