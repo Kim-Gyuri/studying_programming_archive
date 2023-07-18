@@ -22,15 +22,15 @@
 ## 2. Language
 ### JAVA
 `개인공부 정리`
-+ [자바 노트정리](https://github.com/Kim-Gyuri/studying_programming_archive/tree/main/%EC%9E%90%EB%B0%94) <br>
++ [자바 노트정리](https://github.com/Kim-Gyuri/studying_programming_archive/blob/main/%EC%9E%90%EB%B0%94/%EB%AA%A9%EC%B0%A8.md)
 + [자바 8 공부](https://github.com/Kim-Gyuri/java_8_study)
 
 `자바 프로젝트 만들기` <br>
-+ [자바 콘솔 프로젝트](https://github.com/Kim-Gyuri/JavaConsoleProject)
++ [자바 콘솔 프로젝트](https://github.com/Kim-Gyuri/JavaConsoleProject/blob/master/README.md)
 
 `스프링 프로젝트 만들기` <br>
 + [스프링 crud 게시판 페이지 만들기](https://github.com/Kim-Gyuri/spring-board-crud-paging)
-+ [스프링 jpa 쇼핑몰 만들기](https://github.com/Kim-Gyuri/spring-jpa-shop-web)
++ [스프링 쇼핑몰 만들기](https://github.com/Kim-Gyuri/Improved-SpringBoot-Online-Shopping-Store/blob/main/README.md)
 + [스프링부트와 AWS로 혼자 구현하는 웹서비스 책 공부](https://github.com/Kim-Gyuri/webservice)
 
 `참고할 사이트`
@@ -47,7 +47,7 @@
 ### 디자인 패턴
 + 싱글톤 패턴
 + 빌더 패턴
-+ 스트레티지 패턴
++ [스트레티지 패턴](https://github.com/Kim-Gyuri/studying_programming_archive/blob/main/CS/%EB%94%94%EC%9E%90%EC%9D%B8%20%ED%8C%A8%ED%84%B4/%EC%8A%A4%ED%8A%B8%EB%9E%98%ED%8B%B0%EC%A7%80%20%ED%8C%A8%ED%84%B4.md)
 + 템플릿 메서드 패턴
 
  <br>
@@ -62,11 +62,9 @@
 + [프로그래머스 풀이](https://github.com/Kim-Gyuri/studying_programming_archive/tree/main/programmers%20%ED%92%80%EA%B8%B0) <br>
 
 `참고할 사이트` <br>
-+ [알고리즘 개념정리 - 티스토리](https://bcp0109.tistory.com/67?category=850495)
-+ [대회 알고리즘 - 슈퍼마리오 - 네이버카페](https://blog.naver.com/kks227)
++ [자바 Collections 시간복잡도 (Big-O) 개념정리 - 티스토리](https://bcp0109.tistory.com/67?category=850495)
 
-
-## 4. Web Programming ,인프런 강의
+## 4. Web Programming, 인프런 강의
 > 대부분 유로강의를 듣고 작성한 필기노트라 private 제한을 걸었다.
 ### 더 자바, 코드를 조작하는 다양한 방법
 + [코드](https://github.com/Kim-Gyuri/javaStudy-library-framwork)
