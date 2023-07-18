@@ -40,7 +40,7 @@
 
 ## 3. CS
 > 나중에 천천히 추가할 예정
-### 자료구조
+### 자료구조 [(Link)](https://github.com/Kim-Gyuri/studying_programming_archive/blob/main/%EC%9E%90%EB%B0%94/%EB%AA%A9%EC%B0%A8.md#%EC%BB%AC%EB%A0%89%EC%85%98-%ED%94%84%EB%A0%88%EC%9E%84%EC%9B%8C%ED%81%AC-%EB%A7%81%ED%81%AC)
 ### 네트워크
 ### 운영체제
 ### 데이터베이스
