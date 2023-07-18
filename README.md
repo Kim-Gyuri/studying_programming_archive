@@ -64,8 +64,8 @@
 `참고할 사이트` <br>
 + [자바 Collections 시간복잡도 (Big-O) 개념정리 - 티스토리](https://bcp0109.tistory.com/67?category=850495)
 
-## 4. Web Programming, 인프런 강의
-> 대부분 유로강의를 듣고 작성한 필기노트라 private 제한을 걸었다.
+## 4. Web Programming
+> 대부분 유로강의(인프런 강의)를 듣고 작성한 필기노트라 private 제한을 걸었다.
 ### 더 자바, 코드를 조작하는 다양한 방법
 + [코드](https://github.com/Kim-Gyuri/javaStudy-library-framwork)
 
