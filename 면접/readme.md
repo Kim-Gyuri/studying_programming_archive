@@ -108,3 +108,21 @@
 + 스프링 프레임 워크 란?
 + Spring을 사용하면 어떤 이점이 있습니까?
 + 스프링(Spring)에서 자주 사용하는 Annotation 개념 및 예제 정리
+
+### [예상질문3](https://github.com/Kim-Gyuri/studying_programming_archive/blob/main/%EB%A9%B4%EC%A0%91/%EC%98%88%EC%83%81%EC%A7%88%EB%AC%B83.md)
++ @RequestBody, @RequestParam, @ModelAttribute의 차이
++  MSA에 대해서 설명해보세요
++ JPA와 같은 ORM을 사용하면서 쿼리가 복잡해지는 경우에는 어떻게 해결하는게 좋을까요?
++ ORM, JPA, Hibernate의 장단점
++ 한 모델에 종속된 다른 모델의 100개의를 조회했다고 하면 ORM이 실제 쿼리를 어떻게 날리나요?
++ rest api가 무엇인지 설명해보세요
++ spring model mapper 성능
++ 변경감지와 병합
++ 빈 생명주기 콜백이란?
++ 스코프
++ 스프링과 객체지향 관련
++ 스프링의 싱글톤 패턴
++ 커넥션 풀이란
++ @Transactional
++ 자바 질문
++ 기타  
