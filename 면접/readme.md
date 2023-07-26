@@ -126,3 +126,27 @@
 + @Transactional
 + 자바 질문
 + 기타  
+
+### [예상질문4](https://github.com/Kim-Gyuri/studying_programming_archive/blob/main/%EB%A9%B4%EC%A0%91/%EC%98%88%EC%83%81%EC%A7%88%EB%AC%B84.md)
++ 자기소개, 프로젝트 설명
++ API 개발을 하면서 신경쓰는 부분
++ PUT vs PATCH
++ 쿠키 vs 세션 vs 캐시
++ final을 왜쓸까
++ HashMap 키 객체 구현 방법
++ 쓰레드 간에 객체 공유를 어떻게 처리?
++  Java Enum이 사용해봤는지, 왜쓰는지?
++ Java 추상클래스 vs 인터페이스
++ Obejct랑 class 차이
++ 업캐스팅 vs 다운캐스팅
++ 제네릭을 적용해봤는지, 언제 쓰는게 좋은지
++ BST와 Binary Tree에 대해서 설명
++ 멱등성을 아는가?
++ DI 주입방식 (필드, setter, 생성자) 비교
++ MVC 패턴 라이프 사이클
++ 필터 vs 인터셉터
++ JPA를 쓰면 뭐가 좋은지
++ PriorityQueue의 동작 원리
++  N+1 쿼리 이슈 해결 방법
++ 자바 프로그램 실행 과정
++ Spring 애플리케이션 구동 과정
