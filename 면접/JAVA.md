@@ -1,4 +1,6 @@
 # 📌 목차
++ 자바 메모리 구조 및 특징정리
++ 멤버변수와 지역변수
 + JVM 에 대해서, GC 의 원리
 + 컬렉션
 + Generic
@@ -9,6 +11,32 @@
 + final keyword
 + static
 + hashcode / equals / == 
+
+## [자바 메모리 관리](https://github.com/Kim-Gyuri/studying_programming_archive/blob/main/%EB%A9%B4%EC%A0%91/part%20%EC%A0%95%EB%A6%AC/Java/%EC%9E%90%EB%B0%94%20%EB%A9%94%EB%AA%A8%EB%A6%AC%20%EA%B4%80%EB%A6%AC.md)
+
++ 자바 메모리 구조 및 특징정리
+    + 프로그램 구동
+    + 자바 메모리 구조
+    + Static (스태틱 메모리 영역)
+    + Stack (스택 메모리 영역)
+    + Heap (힙 메모리 영역)
+ 
++ 자바 메모리 관리
+    + stack
+    + Heap
+    + 각 영역의 메모리 할당과 해제
+    + 불변객체일 때, 메모리 할당과 해제
+    + Garbage Collection
+
+
+
+## [멤버변수와 지역변수](https://github.com/Kim-Gyuri/studying_programming_archive/blob/main/%EB%A9%B4%EC%A0%91/part%20%EC%A0%95%EB%A6%AC/Java/%EB%A9%A4%EB%B2%84%EB%B3%80%EC%88%98%EC%99%80%20%EC%A7%80%EC%97%AD%EB%B3%80%EC%88%98.md)
+
++ 멤버변수
+    + 인스턴스 변수
+    + 클래스 변수
++ 지역변수
+    
 
 ## [JVM 에 대해서, GC 의 원리](https://github.com/Kim-Gyuri/studying_programming_archive/blob/main/%EB%A9%B4%EC%A0%91/part%20%EC%A0%95%EB%A6%AC/Java/JVM%20%EC%97%90%20%EB%8C%80%ED%95%B4%EC%84%9C%2C%20GC%20%EC%9D%98%20%EC%9B%90%EB%A6%AC.md)
 + JVM
