@@ -33,6 +33,8 @@
 +  웹 브라우저 요청 흐름
 
 ## [JAVA](https://github.com/Kim-Gyuri/studying_programming_archive/blob/main/%EB%A9%B4%EC%A0%91/JAVA.md)
++ 자바 메모리 구조 및 특징정리
++ 멤버변수와 지역변수
 + JVM 에 대해서, GC 의 원리
 + 컬렉션
 + Generic
