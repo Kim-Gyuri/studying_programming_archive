@@ -194,3 +194,91 @@ public class Main {
 추상적인 Object에 의존하면서 OCP 원칙을 지킬 수 있었다. <br>
 덕분에 새로운 클래스를 추가하고 toString() 메서드를 새롭게 오버라이딩해서 기능을 확장할 수 있다.
 
+#### 예시
+객체 지향 설계를 위해 추상화된 Printable 인터페이스를 정의해보자.  <br>
+그런 다음, 이 인터페이스를 구현하는 구체적인 클래스인 Car와 Dog을 만든다. <br>
+ObjectPrinter 클래스를 작성하여 다양한 객체를 출력할 수 있다. <br><br>
+
+
+```java
+package objects;
+
+// 객체를 출력할 때 사용할 인터페이스를 정의한다.
+public interface Printable {
+
+    //출력을 위한 문자열 반환 메서드를 선언한다.
+    String toString();
+}
+```
+
+```java
+package objects;
+
+// Printable 인터페이스를 구현하는 자동차 클래스를 정의한다.
+public class Car implements Printable {
+    private String make;
+    private String model;
+
+    // 자동차의 제조사와 모델을 초기화하는 생성자를 정의한다.
+    public Car(String make, String model) {
+        this.make = make;
+        this.model = model;
+    }
+
+    // Printable 인터페이스의 toString() 메서드를 오버라이드하여 자동차 정보를 반환한다.
+    @Override
+    public String toString() {
+        return "Car: " + make + " " + model;
+    }
+}
+```
+
+```java
+package objects;
+
+// Printable 인터페이스를 구현하는 개 클래스를 정의한다.
+public class Dog implements Printable {
+    private String name;
+    private String breed;
+
+    // 개의 이름과 견종을 초기화하는 생성자를 정의한다.
+    public Dog(String name, String breed) {
+        this.name = name;
+        this.breed = breed;
+    }
+
+    // Printable 인터페이스의 toString() 메서드를 오버라이드하여 개 정보를 반환한다.
+    @Override
+    public String toString() {
+        return "Dog: " + name + " (" + breed + ")";
+    }
+}
+```
+
+```java
+package objects;
+
+// Printable 객체를 출력하는 유틸리티 클래스를 정의한다.
+public class ObjectPrinter {
+    // Printable 객체를 받아들여 문자열로 출력한다.
+    public static void print(Printable printable) {
+        System.out.println(printable);
+    }
+}
+```
+
+```java
+package objects;
+
+public class Main {
+    public static void main(String[] args) {
+        // Printable 인터페이스를 구현한 Car와 Dog 객체를 생성한다.
+        Car myCar = new Car("Toyota", "Corolla");
+        Dog myDog = new Dog("Max", "Labrador");
+
+        // ObjectPrinter를 통해 Printable 객체를 출력한다.
+        ObjectPrinter.print(myCar);
+        ObjectPrinter.print(myDog);
+    }
+}
+```
